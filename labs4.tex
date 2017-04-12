@@ -1,0 +1,62 @@
+\documentclass[12pt]{tdtp}
+\usepackage{tabularx,colortbl}
+\usepackage{multirow}
+\usepackage{listings}
+\lstset{
+	language=VHDL,
+basicstyle=\tiny\ttfamily}
+\definecolor{light-gray}{gray}{0.96}
+\definecolor{pageheading-gray}{gray}{0.2}
+\definecolor{dark-gray}{gray}{0.45}
+\definecolor{dark-green}{rgb}{0.245,0.121,0.0}
+
+\newcommand{\auteur}{Cedric Lemaitre}
+\newcommand{\couriel}{c.lemaitre58@gmail.com}
+\newcommand{\promo}{Bachelor in Computer Vision}
+\newcommand{\annee}{2016-2017}
+\newcommand{\matiere}{Digital Electronics}
+
+\newcommand{\tdtp}{Labs 4}
+\renewcommand{\sujet}{Test board implementation}
+
+
+\begin{document}
+\titre
+We propose in this labs to implement some basic operatior on the test board named Nexys 4.\\
+
+\textit {NB : all examples should be check using \textbf{test-benchs} and simulatuon tools before to use the board!!!}
+
+
+%%%%%%%%%%%%
+\Exo
+Create a design which allows to display a value between 0 and F of one 7-segement Display.
+%%%%%%%%%%%%
+\Exo
+Create a design which allows to display a value between 0 and F of one 7-segement Display which will select by using swichtes on the board.
+%%%%%%%%%%%%
+\Exo
+Create a design which allows to display the value coming from a counter modulo F on a particular 7-segment display. 
+Use the clock of the card as an input of your counter.
+
+%%%%%%%%%%%
+\Exo
+Create a design which allows to display the value coming from a counter modulo 9999 on a particular 7-segment display. 
+Use the clock of the card as an input of your counter.
+
+%%%%%%%%%%%
+\newpage
+
+\Note 
+
+The datasheet of the Nexys 4 here : \url{https://reference.digilentinc.com/_media/nexys:nexys4:nexys4_rm.pdf}.\\
+
+In order to connect real output of the FPGA to semantic name of the Buses of your own design, you need to use the \textbf{UCF} file given by the Diligent : \url{https://reference.digilentinc.com/_media/reference/programmable-logic/nexys-4/nexys4_master_ucf.zip}\\
+
+\textit{The UCF file is an ASCII file specifying constraints and netlist on the logical design. 
+	You can create this file and enter your constraints with any text editor.
+You can also use the Constraints Editor to create constraints within a UCF file.
+These constraints affect how the logical design is implemented in the target device.
+You  can use the file to override constraints specified during design entry}
+
+%%%%%%%%%%%
+\end{document}
