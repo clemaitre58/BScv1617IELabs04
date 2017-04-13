@@ -1,4 +1,4 @@
 v 4
-file . "bcd_nexys4.vhdl" "70179823348519140b88113393f82991538ff83d" "20170413085609.105":
-  entity bcd_dec at 1( 0) + 0 on 11;
-  architecture behavioral of bcd_dec at 16( 326) + 0 on 12;
+file . "bcd_nexys4.vhdl" "8a74ac1a9439ab8425c9a7bd4ff72ed4e4784aa0" "20170413114342.565":
+  entity bcd_dec at 1( 0) + 0 on 13;
+  architecture behavioral of bcd_dec at 17( 359) + 0 on 14;
